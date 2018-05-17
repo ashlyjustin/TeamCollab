@@ -7,7 +7,7 @@ from django.urls import reverse
 from django.views import generic
 from groups.models import Group,GroupMember
 from django.contrib import messages
-from .import models
+from .import models 
 
 class CreateGroup(LoginRequiredMixin, generic.CreateView):
     fields = ("name", "description")
